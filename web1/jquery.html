@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <title>Jquery</title>
+
+    <script>
+        window.onload = function() {
+            document.getElementById("username").focus();
+            document.getElementById("contoh").innerHTML="JQUERY!";
+            
+            $("#username").focus(function() {
+                document.getElementById("type").innerHTML="";
+            });
+
+            $("#username").keypress(function() {
+                document.getElementById("type").innerHTML="Typing Username!";
+            });
+
+            $("#email").focus(function() {
+                document.getElementById("type").innerHTML="";
+            });
+
+            $("#email").keypress(function() {
+                document.getElementById("type").innerHTML="Typing Email!";
+            });
+
+            $("#submit").click(function() {
+                document.getElementById("type").innerHTML="";
+                alert("Hello " + document.getElementById("username").value);
+                document.getElementById("username").value="";
+                document.getElementById("email").value="";
+                document.getElementById("type").value="";
+            });
+
+            $("#reset").click(function() {
+                document.getElementById("type").innerHTML="";
+                document.getElementById("username").value="";
+                document.getElementById("email").value="";
+                document.getElementById("type").value="";
+            });
+
+        };
+    </script>
+</head>
+<body>
+    <p id="contoh"></p>
+    <h1 id="head"></h1>
+
+    Username : <input type="text" id="username" name="username"><br>
+   
+
+    Email : <input type="text" id="email" name="email"><br>
+
+    <p id="type" style="color:grey"></p>
+
+    <button type="submit" id="submit">SUBMIT</button>
+    <button type="submit" id="reset">RESET</button>
+
+</body>
+</html>

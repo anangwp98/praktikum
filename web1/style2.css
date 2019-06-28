@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+body {
+    background: #AA076B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+    color: #8f42f4;
+    padding: 60px;
+}
+p {
+    text-align: center;
+    text-transform: lowercase;
+    color: #fff;
+    padding: 0 100px 100px 100px;
+}
+
+.h1pertama {
+    color: #fff;
+}
